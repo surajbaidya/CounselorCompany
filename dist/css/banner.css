@@ -1,0 +1,41 @@
+.section__banner .main__banner {
+  display: flex;
+}
+.section__banner .main__banner .banner__right {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.section__banner .main__banner .banner__right .play-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #000;
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+  animation: spin 2s linear infinite;
+}
+.section__banner .main__banner .banner__right .play-button::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
