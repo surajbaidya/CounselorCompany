@@ -41,7 +41,6 @@
 .header__bottom .header__bottom-right ul li a:hover {
   color: #589167;
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -153,4 +152,105 @@ body .roboto-regular {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+
+.section__banner {
+  height: 800px;
+  background-image: url(../images/couple.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.section__banner .main__banner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  height: 800px;
+  align-items: center;
+}
+.section__banner .banner__left {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+.section__banner .banner__left h1 {
+  font-size: 60px;
+}
+.section__banner .banner__left p {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 30px 0;
+}
+.section__banner .banner__left a {
+  display: inline-block;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 20px 30px;
+  border-radius: 3px;
+}
+.section__banner .banner__left .button__a {
+  background-color: #589167;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  border: 2px solid #589167;
+}
+.section__banner .banner__left .button__a:hover {
+  background-color: transparent;
+}
+.section__banner .banner__left .button__b {
+  background-color: #fff;
+  color: #000;
+  transition: 0.3s ease-in-out;
+  border: 2px solid #fff;
+}
+.section__banner .banner__left .button__b:hover {
+  color: #fff;
+  background-color: transparent;
+}
+.section__banner .banner__right {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  position: relative;
+}
+.section__banner .banner__right .border__animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110px;
+  width: 110px;
+  border: 15px solid rgba(108, 150, 110, 0.4);
+  border-radius: 50%;
+  animation: borderAnimation 3s ease-in-out infinite;
+  margin: 0 auto;
+}
+.section__banner .banner__right .border__animation .play__button {
+  background: #fff;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  position: relative;
+}
+.section__banner .banner__right .border__animation .play__button i {
+  color: #589167;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@keyframes borderAnimation {
+  0% {
+    border-width: 15px;
+  }
+  50% {
+    border-width: 0;
+    border-color: transparent;
+  }
+  100% {
+    border-width: 0;
+  }
 }

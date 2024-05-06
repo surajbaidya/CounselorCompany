@@ -1,0 +1,105 @@
+$color__orange-a: #ff5733; // Define the color variable
+
+.section__banner {
+  height: 800px;
+  background-image: url(../images/couple.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  .main__banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    height: 800px;
+    align-items: center;
+  }
+  .banner__left {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    h1 {
+      font-size: 60px;
+    }
+    p {
+      font-size: 18px;
+      color: $color__black-b;
+      margin: 30px 0;
+    }
+    a {
+      display: inline-block;
+      font-size: 15px;
+      text-decoration: none;
+      text-transform: capitalize;
+      padding: 20px 30px;
+      border-radius: 3px;
+    }
+    .button__a {
+      background-color: $color__green-a;
+      color: $color__white-a;
+      transition: 0.3s ease-in-out;
+      border: 2px solid $color__green-a;
+      &:hover {
+        background-color: transparent;
+      }
+    }
+    .button__b {
+      background-color: $color__white-a;
+      color: $color__black-a;
+      transition: 0.3s ease-in-out;
+      border: 2px solid $color__white-a;
+      &:hover {
+        color: $color__white-a;
+        background-color: transparent;
+      }
+    }
+  }
+  .banner__right {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    position: relative;
+
+    .border__animation {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 110px;
+      width: 110px;
+      border: 15px solid rgba(108, 150, 110, 0.4);
+      border-radius: 50%;
+      animation: borderAnimation 3s ease-in-out infinite;
+      margin: 0 auto;
+      .play__button {
+        background: $color__white-a;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        position: relative;
+
+        i {
+          color: $color__green-a;
+          font-size: 30px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+
+  @keyframes borderAnimation {
+    0% {
+      border-width: 15px;
+    }
+    50% {
+      border-width: 0;
+      border-color: transparent;
+    }
+    100% {
+      border-width: 0;
+    }
+  }
+}
