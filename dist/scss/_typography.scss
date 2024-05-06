@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+  }
+}
+
+.wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (min-width: 576px) {
+  .wrapper {
+    max-width: 760px; /* Example width for small devices */
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 991px;
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    max-width: 1199px;
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 1200px;
+    padding: 0 10px;
+  }
+}

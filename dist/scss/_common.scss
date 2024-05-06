@@ -1,0 +1,41 @@
+.title__top {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 12px;
+  color: $color__green-a;
+  margin-bottom: 25px;
+}
+
+.title__bottom {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  color: $color__black-c;
+}
+.header__top-icons {
+  color: $color__white-a;
+  font-size: 10px;
+  padding-right: 5px;
+}
+.common__icons {
+  margin-right: 5px;
+}
+.icon__gap {
+  margin-right: 15px;
+}
+.header__right-icons {
+  color: $color__white-a;
+  margin-left: 25px;
+}
+
+.flex__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.active {
+  color: $color__green-a !important;
+}
