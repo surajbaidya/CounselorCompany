@@ -90,7 +90,9 @@ body .roboto-regular {
   font-style: normal;
   font-size: 12px;
   color: #589167;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .title__bottom {
@@ -99,6 +101,8 @@ body .roboto-regular {
   font-style: normal;
   font-size: 40px;
   color: rgba(0, 0, 0, 0.7019607843);
+  text-transform: capitalize;
+  letter-spacing: 2px;
 }
 
 .header__top-icons {
@@ -128,6 +132,27 @@ body .roboto-regular {
 
 .active {
   color: #589167 !important;
+}
+
+.common__team-content {
+  display: flex;
+}
+
+.confidential-header {
+  font-size: 24px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.confidential__paragraph {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 30px;
+  margin-top: 10px;
+}
+
+.team__icon {
+  margin: 18px 14px 0 0;
 }
 
 .roboto-light {
@@ -178,6 +203,7 @@ body .roboto-regular {
 }
 .section__banner .banner__left h1 {
   font-size: 60px;
+  text-transform: capitalize;
 }
 .section__banner .banner__left p {
   font-size: 18px;
@@ -253,4 +279,43 @@ body .roboto-regular {
   100% {
     border-width: 0;
   }
+}
+
+.section__team {
+  margin-top: -115px;
+  padding-bottom: 60px;
+}
+.section__team .main__team {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  width: calc(100% - 400px);
+}
+.section__team .main__team .common__team-content {
+  padding: 39px;
+  height: 100%;
+}
+.section__team .team__content-a {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: #589167;
+}
+.section__team .team__content-b {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: #589167;
+}
+.section__team .team__content-c {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  background-color: #528760;
+}
+.section__team .team__content-d {
+  grid-column: 4/5;
+  grid-row: 1/2;
+  background-color: #4e815c;
+}
+
+.section__service .service__text {
+  text-align: center;
 }

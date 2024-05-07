@@ -22,6 +22,7 @@ $color__orange-a: #ff5733; // Define the color variable
     transform: translate(0, -50%);
     h1 {
       font-size: 60px;
+      text-transform: capitalize;
     }
     p {
       font-size: 18px;
