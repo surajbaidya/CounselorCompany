@@ -168,6 +168,19 @@ body .roboto-regular {
   line-height: 30px;
 }
 
+@keyframes waves {
+  0% {
+    transform: scale(0.2, 0.2);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(0.9, 0.9);
+    opacity: 0;
+  }
+}
 .roboto-light {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -273,24 +286,36 @@ body .roboto-regular {
   border-radius: 50%;
   position: relative;
 }
-.section__banner .banner__right .border__animation .play__button i {
-  color: #589167;
-  font-size: 30px;
+.section__banner .video-main .play__button {
+  position: relative;
+}
+.section__banner .video-main .play__button .promo-video .waves-block .wave__play {
+  border-radius: 50%;
+  height: 165px;
+  width: 165px;
+  left: 213px;
+  bottom: -82px;
+}
+.section__banner .video-main .play__button .play__button-a {
+  height: 75px;
+  width: 75px;
+  background-color: #fff;
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section__banner .video-main .play__button .play__button-a i {
+  color: #528760;
+  font-size: 18px;
+}
+.section__banner .video-main .play__button .play__button-position {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-@keyframes borderAnimation {
-  0% {
-    border: 16px solid rgba(29, 200, 150, 0.1);
-  }
-  50% {
-    border: 5px solid rgba(29, 200, 150, 0.6);
-  }
-  100% {
-    border: 0 transparent;
-  }
+  display: inline-block;
 }
 
 .section__team {
@@ -410,16 +435,25 @@ body .roboto-regular {
   text-align: center;
 }
 
+@keyframes waves {
+  0% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+}
 .section__funding .main__funding-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   grid-gap: 20px;
   background-color: #f5f4f0;
-}
-.section__funding .main__funding-content .funding__content-left img {
-  width: 100%;
-  height: auto;
 }
 .section__funding .main__funding-content .funding__content-right {
   padding: 30px;
@@ -445,4 +479,104 @@ body .roboto-regular {
 }
 .section__funding .main__funding-content .funding__content-right .common__paragraph {
   margin: 20px 0;
+}
+.section__funding .main__funding-content .funding__content-right .video__content-main {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.section__funding .main__funding-content .funding__content-left img {
+  width: 100%;
+}
+
+.video-main {
+  position: relative;
+  display: inline-block;
+}
+
+.video {
+  padding: 10px 0;
+  line-height: 50px;
+  text-align: center;
+  background-color: #fff;
+  z-index: 999;
+  position: relative;
+  border-radius: 7px;
+}
+
+.waves {
+  position: absolute;
+  width: 117px;
+  height: 90px;
+  background: rgba(32, 201, 151, 0.3);
+  opacity: 0;
+  border-radius: 22px;
+  left: -2px;
+  bottom: 11px;
+  animation: waves 4s ease-in-out infinite;
+}
+
+.wave-1 {
+  animation-delay: 0s;
+}
+
+.wave-2 {
+  animation-delay: 1s;
+}
+
+.wave-3 {
+  animation-delay: 2s;
+}
+
+.section__service-tab #contaniner {
+  background-color: transparent;
+  height: 60%;
+  max-height: 550px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  overflow: auto;
+  box-sizing: border-box;
+}
+.section__service-tab #header {
+  grid-column: span 4;
+  padding-bottom: 5px;
+}
+.section__service-tab #header p {
+  font-size: 22px;
+  font-weight: 700;
+}
+.section__service-tab #tabs {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.section__service-tab #tabs input {
+  display: none;
+}
+.section__service-tab #tabs label {
+  border-radius: 5px;
+  width: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+  display: block;
+  padding: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 11px;
+}
+.section__service-tab #text {
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+.section__service-tab #text .txt-head {
+  font-weight: 600;
+  font-size: 18px;
+  padding: 5px 0;
+}
+.section__service-tab #blog-txt,
+.section__service-tab #code-txt,
+.section__service-tab #project-txt,
+.section__service-tab #about-txt {
+  display: none;
 }
