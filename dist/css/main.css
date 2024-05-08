@@ -209,6 +209,7 @@ body .roboto-regular {
   font-size: 18px;
   color: rgba(0, 0, 0, 0.8);
   margin: 30px 0;
+  line-height: 26px;
 }
 .section__banner .banner__left a {
   display: inline-block;
@@ -282,7 +283,7 @@ body .roboto-regular {
 }
 
 .section__team {
-  margin-top: -115px;
+  margin-top: -75px;
   padding-bottom: 60px;
 }
 .section__team .main__team {
