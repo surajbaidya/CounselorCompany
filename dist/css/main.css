@@ -155,6 +155,19 @@ body .roboto-regular {
   margin: 18px 14px 0 0;
 }
 
+.text__schedule {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: capitalize;
+  margin: 14px 0;
+}
+
+.text__paragraph {
+  font-size: 17px;
+  color: #808080;
+  line-height: 30px;
+}
+
 .roboto-light {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -249,9 +262,8 @@ body .roboto-regular {
   justify-content: center;
   height: 110px;
   width: 110px;
-  border: 15px solid rgba(108, 150, 110, 0.4);
   border-radius: 50%;
-  animation: borderAnimation 3s ease-in-out infinite;
+  animation: borderAnimation 2s infinite;
   margin: 0 auto;
 }
 .section__banner .banner__right .border__animation .play__button {
@@ -271,14 +283,13 @@ body .roboto-regular {
 }
 @keyframes borderAnimation {
   0% {
-    border-width: 15px;
+    border: 16px solid rgba(29, 200, 150, 0.1);
   }
   50% {
-    border-width: 0;
-    border-color: transparent;
+    border: 5px solid rgba(29, 200, 150, 0.6);
   }
   100% {
-    border-width: 0;
+    border: 0 transparent;
   }
 }
 
@@ -317,6 +328,121 @@ body .roboto-regular {
   background-color: #4e815c;
 }
 
+.section__service {
+  padding: 60px 0;
+}
 .section__service .service__text {
   text-align: center;
+}
+.section__service .service__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 62px;
+  margin-top: 60px;
+}
+.section__service .service__content .common__service-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section__service .service__content .common__service-content .icon__circle {
+  position: relative;
+  transition: 0.5s ease-in-out;
+  height: 165px;
+  width: 165px;
+  background-color: #f5f4f0;
+  border-radius: 50%;
+  position: relative;
+}
+.section__service .service__content .common__service-content .icon__circle::before {
+  content: "";
+  height: 36px;
+  width: 36px;
+  background-color: #528760;
+  border-radius: 50%;
+  position: absolute;
+  top: 70px;
+  left: 90px;
+  opacity: 0.8;
+  transition: 0.5s ease-in-out;
+}
+.section__service .service__content .common__service-content .icon__circle:hover {
+  background-color: #528760;
+  color: #fff;
+}
+.section__service .service__content .common__service-content .icon__circle:hover:before {
+  background-color: #fff;
+  position: absolute;
+  left: 70px;
+}
+.section__service .service__content .common__service-content .icon__circle:hover .circle__number {
+  background-color: #fff;
+  transition: 0.5s ease-in-out;
+}
+.section__service .service__content .common__service-content .icon__circle:hover .circle__number .number__content {
+  color: #528760;
+}
+.section__service .service__content .common__service-content .icon__circle img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.section__service .service__content .common__service-content .icon__circle .circle__number {
+  height: 45px;
+  width: 45px;
+  background-color: #528760;
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  right: 0;
+  border: 3px solid #fff;
+}
+.section__service .service__content .common__service-content .icon__circle .circle__number .number__content {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 17px;
+}
+.section__service .service__content .common__service-content .icon__text {
+  text-align: center;
+}
+
+.section__funding .main__funding-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-gap: 20px;
+  background-color: #f5f4f0;
+}
+.section__funding .main__funding-content .funding__content-left img {
+  width: 100%;
+  height: auto;
+}
+.section__funding .main__funding-content .funding__content-right {
+  padding: 30px;
+}
+.section__funding .main__funding-content .funding__content-right .funding__play-content .watch__button {
+  margin-right: 10px;
+}
+.section__funding .main__funding-content .funding__content-right .funding__play-content .watch__button i {
+  font: 15px;
+  color: #528760;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #528760;
+}
+.section__funding .main__funding-content .funding__content-right .funding__play-content .watch__text-content {
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.section__funding .main__funding-content .funding__content-right .down__paragraph {
+  margin-top: 30px;
+}
+.section__funding .main__funding-content .funding__content-right .common__paragraph {
+  margin: 20px 0;
 }

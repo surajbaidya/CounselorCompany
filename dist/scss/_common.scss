@@ -60,3 +60,14 @@
 .team__icon {
   margin: 18px 14px 0 0;
 }
+.text__schedule {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: capitalize;
+  margin: 14px 0;
+}
+.text__paragraph {
+  font-size: 17px;
+  color: $color__grey-a;
+  line-height: 30px;
+}
