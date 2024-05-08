@@ -1,5 +1,81 @@
 .section__service {
+  padding: 60px 0;
   .service__text {
     text-align: center;
+  }
+  .service__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 62px;
+    margin-top: 60px;
+    .common__service-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .icon__circle {
+        position: relative;
+        transition: 0.5s ease-in-out;
+        height: 165px;
+        width: 165px;
+        background-color: $color__grey-d;
+        border-radius: 50%;
+        position: relative;
+        &::before {
+          content: "";
+          height: 36px;
+          width: 36px;
+          background-color: $color__green-b;
+          border-radius: 50%;
+          position: absolute;
+          top: 70px;
+          left: 90px;
+          opacity: 0.8;
+          transition: 0.5s ease-in-out;
+        }
+        &:hover {
+          background-color: $color__green-b;
+          color: $color__white-a;
+          &:before {
+            background-color: $color__white-a;
+            position: absolute;
+            left: 70px;
+          }
+          & .circle__number {
+            background-color: $color__white-a;
+            transition: 0.5s ease-in-out;
+            & .number__content {
+              color: $color__green-b;
+            }
+          }
+        }
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        .circle__number {
+          height: 45px;
+          width: 45px;
+          background-color: $color__green-b;
+          border-radius: 50%;
+          position: absolute;
+          top: 6px;
+          right: 0;
+          border: 3px solid $color__white-a;
+          .number__content {
+            color: $color__white-a;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 17px;
+          }
+        }
+      }
+      .icon__text {
+        text-align: center;
+      }
+    }
   }
 }
