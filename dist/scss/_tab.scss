@@ -1,0 +1,60 @@
+.section__service-tab {
+  #contaniner {
+    background-color: transparent;
+    height: 60%;
+    max-height: 550px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+
+    overflow: auto;
+    box-sizing: border-box;
+  }
+  #header {
+    grid-column: span 4;
+    padding-bottom: 5px;
+  }
+
+  #header p {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  #tabs {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  #tabs input {
+    display: none;
+  }
+
+  #tabs label {
+    border-radius: 5px;
+    width: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+    display: block;
+    padding: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 11px;
+  }
+
+  #text {
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+
+  #text .txt-head {
+    font-weight: 600;
+    font-size: 18px;
+    padding: 5px 0;
+  }
+
+  #blog-txt,
+  #code-txt,
+  #project-txt,
+  #about-txt {
+    display: none;
+  }
+}
