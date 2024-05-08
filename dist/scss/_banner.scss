@@ -69,9 +69,9 @@ $color__orange-a: #ff5733; // Define the color variable
       justify-content: center;
       height: 110px;
       width: 110px;
-      border: 15px solid rgba(108, 150, 110, 0.4);
+
       border-radius: 50%;
-      animation: borderAnimation 3s ease-in-out infinite;
+      animation: borderAnimation 2s infinite;
       margin: 0 auto;
       .play__button {
         background: $color__white-a;
@@ -94,14 +94,13 @@ $color__orange-a: #ff5733; // Define the color variable
 
   @keyframes borderAnimation {
     0% {
-      border-width: 15px;
+      border: 16px solid rgba(29, 200, 150, 0.1);
     }
     50% {
-      border-width: 0;
-      border-color: transparent;
+      border: 5px solid rgba(29, 200, 150, 0.6);
     }
     100% {
-      border-width: 0;
+      border: 0 transparent;
     }
   }
 }

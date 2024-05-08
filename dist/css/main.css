@@ -262,9 +262,8 @@ body .roboto-regular {
   justify-content: center;
   height: 110px;
   width: 110px;
-  border: 15px solid rgba(108, 150, 110, 0.4);
   border-radius: 50%;
-  animation: borderAnimation 3s ease-in-out infinite;
+  animation: borderAnimation 2s infinite;
   margin: 0 auto;
 }
 .section__banner .banner__right .border__animation .play__button {
@@ -284,14 +283,13 @@ body .roboto-regular {
 }
 @keyframes borderAnimation {
   0% {
-    border-width: 15px;
+    border: 16px solid rgba(29, 200, 150, 0.1);
   }
   50% {
-    border-width: 0;
-    border-color: transparent;
+    border: 5px solid rgba(29, 200, 150, 0.6);
   }
   100% {
-    border-width: 0;
+    border: 0 transparent;
   }
 }
 
@@ -410,4 +408,41 @@ body .roboto-regular {
 }
 .section__service .service__content .common__service-content .icon__text {
   text-align: center;
+}
+
+.section__funding .main__funding-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-gap: 20px;
+  background-color: #f5f4f0;
+}
+.section__funding .main__funding-content .funding__content-left img {
+  width: 100%;
+  height: auto;
+}
+.section__funding .main__funding-content .funding__content-right {
+  padding: 30px;
+}
+.section__funding .main__funding-content .funding__content-right .funding__play-content .watch__button {
+  margin-right: 10px;
+}
+.section__funding .main__funding-content .funding__content-right .funding__play-content .watch__button i {
+  font: 15px;
+  color: #528760;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #528760;
+}
+.section__funding .main__funding-content .funding__content-right .funding__play-content .watch__text-content {
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.section__funding .main__funding-content .funding__content-right .down__paragraph {
+  margin-top: 30px;
+}
+.section__funding .main__funding-content .funding__content-right .common__paragraph {
+  margin: 20px 0;
 }

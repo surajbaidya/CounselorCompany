@@ -1,0 +1,42 @@
+.section__funding {
+  .main__funding-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 20px;
+    background-color: $color__grey-d;
+    .funding__content-left {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .funding__content-right {
+      padding: 30px;
+      .funding__play-content {
+        .watch__button {
+          margin-right: 10px;
+          i {
+            font: 15px;
+            color: $color__green-b;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 1px solid $color__green-b;
+          }
+        }
+        .watch__text-content {
+          font-size: 14px;
+          color: $color__black-a;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+      }
+      .down__paragraph {
+        margin-top: 30px;
+      }
+      .common__paragraph {
+        margin: 20px 0;
+      }
+    }
+  }
+}
