@@ -168,19 +168,20 @@ body .roboto-regular {
   line-height: 30px;
 }
 
-@keyframes waves {
-  0% {
-    transform: scale(0.2, 0.2);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.9;
-  }
-  100% {
-    transform: scale(0.9, 0.9);
-    opacity: 0;
-  }
+.image__content img {
+  width: 100%;
+  height: 452px;
 }
+
+.txt-paragraph {
+  font-family: "Roboto", Arial, sans-serif;
+  background: #fff;
+  font-size: 17px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #808080;
+}
+
 .roboto-light {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -530,13 +531,18 @@ body .roboto-regular {
   animation-delay: 2s;
 }
 
+.section__service-tab {
+  padding: 110px;
+}
+.section__service-tab .tab__title-wrap {
+  text-align: center;
+  margin-bottom: 80px;
+}
 .section__service-tab #contaniner {
   background-color: transparent;
   height: 60%;
-  max-height: 550px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
   overflow: auto;
   box-sizing: border-box;
 }
@@ -564,19 +570,31 @@ body .roboto-regular {
   padding: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 11px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
 }
 .section__service-tab #text {
   grid-column: 2/4;
   grid-row: 1/2;
+  padding: 0 30px;
 }
 .section__service-tab #text .txt-head {
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 700;
+  font-size: 28px;
   padding: 5px 0;
+  font-family: "Roboto", sans-serif;
+  margin: 10px 0;
 }
+.section__service-tab #home-txt,
 .section__service-tab #blog-txt,
 .section__service-tab #code-txt,
 .section__service-tab #project-txt,
-.section__service-tab #about-txt {
+.section__service-tab #about-txt,
+.section__service-tab #business {
   display: none;
+}
+.section__service-tab #tabs input:checked + label {
+  background-color: #528760;
+  color: #fff;
 }
