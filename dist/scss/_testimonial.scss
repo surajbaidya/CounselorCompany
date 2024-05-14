@@ -1,0 +1,26 @@
+.section__testimonial {
+  background-image: url(../../../CounselorCompany/dist/images/gang.jpg);
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  &::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: $color__green-b;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+  }
+  .testimonial__text-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}

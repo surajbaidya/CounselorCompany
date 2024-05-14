@@ -87,3 +87,38 @@
   font-weight: 400;
   color: $color__grey-a;
 }
+
+.testimonial__color {
+  color: $color__white-a;
+}
+
+.slider__paragraph {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: $color__grey-a;
+  margin: 20px 0;
+  padding: 20px;
+}
+.image__content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.name__content {
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 20px;
+  color: $color__black-a;
+  margin-bottom: 10px;
+}
+
+.work__title {
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+  font-size: 16px;
+  color: $color__grey-e;
+  font-weight: 400;
+}
